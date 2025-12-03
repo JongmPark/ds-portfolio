@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f9fafb; /* 밝은 회색/흰색 */
+  --foreground: #1f2937; /* 어두운 회색 */
 }
 
 @theme inline {
@@ -14,9 +14,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #111827; /* 다크 배경 */
+    --foreground: #f3f4f6; /* 다크 텍스트 */
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
